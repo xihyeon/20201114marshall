@@ -30,13 +30,18 @@ body{  font-family: 'Noto Sans KR', sans-serif;}
   #main_header{
     width: 100%;
   }
-  #main_header tr td:hover {
-    position: relative;
+  #main_header:hover #sub_wrap{
+    visibility:visible;
+    top: 0;
   }
   #sub_wrap{
     position: relative;
     background: red;
+    top:-300px;
     overflow: hidden;
+    visibility:hidden;
+    transition: top ease 1s 0s;
+
   }
   .sub_menu{
     height: 190px;
@@ -46,6 +51,7 @@ body{  font-family: 'Noto Sans KR', sans-serif;}
     line-height: 35px;
     border: 1px solid #d7d5d1;
   }
+
 /* gnb style */
 
 /* gnb submenu*/
