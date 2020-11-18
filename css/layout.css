@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0px; padding: 0px;}
+a{text-decoration: none;}
+html,body{
+  min-width: 1200px;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+}
+ul,li{list-style: none;}
+body{
+    width: 100rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+}
+/* common btn 공통 */
+
+
+/*레이아웃 구조 */
+
+
+/* 기본 Btn style */
