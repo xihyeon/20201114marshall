@@ -4,13 +4,13 @@
 a{text-decoration: none;}
 html,body{
   min-width: 1200px;
-  font-size: 10px;
-  width: 100%;
-  height: 100%;
+  font-size: 12px;
+  width: 100vw;
+  height: 100vh;
 }
 ul,li{list-style: none;}
 body{
-    width: 100rem;
+    width: 100vw;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.4rem;
     overflow-x: hidden;
@@ -20,5 +20,70 @@ body{
 
 /*레이아웃 구조 */
 
+/* header */
+#gnb{
+  display: table;
+  position: relative;
+  width: 100%;
+  min-width: 1600px;
+  height: 8rem;
+  background-color: #4e6473;
+  box-sizing: border-box;
+  table-layout: fixed;
+}
+#gnb .gnb_inner{
+  display: table-row;
+}
+#gnb .gnb_inner .gnb_table_cell{
+  display: table-cell;
+  height: 8rem;
+}
+/* table-cell width */
+.cell_logo{
+  width: 20%;
+  border-right: 1px solid #899397;
+  box-sizing: border-box;
+}
+.cell_middle{
+  width: 60%;
+  border-right: 1px solid #899397;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cell_icon a{
+  text-align: center;
+}
+.cell_icon{
+  width: 20%;
+  border-right: 1px solid #899397;
+  box-sizing: border-box;
+}
+
+/* table cell top, bottom height */
+#gnb .gnb_inner .gnb_table_cell .top_cell{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #899397;
+  box-sizing: border-box;
+}
+#gnb .gnb_inner .gnb_table_cell .top_cell a{
+  line-height: 40px;
+  color: #adafaf;
+}
+
+/* bottom gnb menu */
+.bottom_cell{
+  height: 65px;
+}
+.bottom_cell ul li{
+  display: inline;
+  float: left;
+}
+.bottom_cell ul li a{
+  display: block;
+  line-height: 50px;
+}
 
 /* 기본 Btn style */
